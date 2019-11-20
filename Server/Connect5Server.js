@@ -185,7 +185,7 @@ const requestHandler = (request, response) => {
 */
 function checkWinCondition(locationX) {	
 	var locationY = piecesInPlay[locationX].length - 1;
-	var checkList = [[1, 0, 0], [-1, 0, 0], [1, 1, 1], [-1, -1, 1], [-1, 1, 2], [1, -1, 2], [0, -1, 3]]
+	var checkList = [[1, 0, 0], [-1, 0, 0], [1, 1, 1], [-1, -1, 1], [-1, 1, 2], [1, -1, 2], [0, -1, 3]];
 	var countDir = [0, 0, 0, 0];
 	var range = 0;
 	
@@ -214,8 +214,9 @@ function checkWinCondition(locationX) {
 const server = http.createServer(requestHandler)
 server.listen(port, (err) => {
   if (err) {
-    return console.log('Failed to start server: ', err)
+    return console.log('Failed to start server: ', err);
   }
 
-  console.log(`server is listening on ${port}`)
-})
+  console.log(`server is listening on ${port}`);
+});
+

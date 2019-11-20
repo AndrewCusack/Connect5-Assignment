@@ -144,7 +144,8 @@ public class Connect5Client
 							gameOver = true;
 							input.nextLine();
 						break;
-						default: printBoardFromResponse(response); 
+						default: 
+							printBoardFromResponse(response); 
 							System.out.println("Board has been refreshed. Please wait for " + response.get("currentPlayer") + "..."); 
 							myTurn = false;
 						break;
