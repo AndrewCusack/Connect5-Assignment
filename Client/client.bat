@@ -1,0 +1,3 @@
+javac Connect5Client.java
+java Connect5Client
+pause
